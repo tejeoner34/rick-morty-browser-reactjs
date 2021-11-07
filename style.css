@@ -1,0 +1,209 @@
+@font-face {
+    font-family: "Rick and Morty Font";
+    src: url("get_schwifty.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-color: black;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(37, 37, 37);
+    margin-bottom: 1rem;
+    font-family: "Rick and Morty Font";
+
+}
+
+.header__h2{
+    color: #12b0c9;
+    font-size: 2rem;
+}
+
+.img-container{
+    width: 25%;
+}
+
+.img-container__img{
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.searchbar-container{
+    display: flex;
+    gap: 1rem;
+}
+
+.searchbar-container__characters {
+    width: 40%;
+}
+
+
+.searchbar-container__characters input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+.searchbar-container__location{
+    width: 60%;
+}
+
+.searchbar-container__location input{
+    width: 70%;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+
+
+}
+
+.searchbar-container__location button {
+    width: 30%;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #aec55c;
+
+
+}
+
+.searchbar-container__location button:hover{
+    background-color: #12b0c9;
+    cursor: pointer;
+}
+
+.searchbar-container__location button:active{
+    background-color: #aec55c;
+
+}
+
+.error {
+    color: red;
+    background-color: black;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.location-card{
+    color: white;
+    background-color: rgb(37, 37, 37);
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+.location-card p{
+    padding: 0.4rem;
+}
+
+.card{
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+    align-items: center;
+    border: 1px solid black;
+    width: 500px;
+    height: 200px;
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+.info p {
+    padding: 0.5rem;
+}
+
+.img-div{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-div img {
+    width: 100%;
+}
+
+.gender {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.Male{
+    height: 15px;
+  width: 15px;
+  background-color: red;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: -2px;
+}
+
+.Female {
+    height: 15px;
+  width: 15px;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: -2px;
+}
+
+
+@media (max-width: 600px){
+
+    .img-container{
+        width: 40%;
+    }
+
+    .card{
+        flex-direction: column;
+        width: 300px;
+        height: fit-content;
+        padding: 1rem;
+    }
+
+    .main{
+        justify-content: center;
+    }
+
+    .searchbar-container{
+        flex-direction: column;
+    }
+
+    .searchbar-container__characters{
+        width: 100%;
+    }
+
+    .searchbar-container__location{
+        width: 100%;
+    }
+}
